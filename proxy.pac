@@ -6,8 +6,6 @@ function FindProxyForURL(url, host) {
     var DIRECT_DOMAINS = [
         "example.com",
         "*.example.com",
-        "localhost",
-        "127.0.0.1"
     ];
 
     // Domains that should go via PROXY
@@ -15,7 +13,9 @@ function FindProxyForURL(url, host) {
         "google.com",
         "*.google.com",
         "github.com",
-        "*.github.com"
+        "*.github.com",
+        "localhost",
+        "127.0.0.1"
     ];
 
     // Proxy server
