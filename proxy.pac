@@ -24,7 +24,7 @@ function FindProxyForURL(url, host) {
         "*.ipify.org"         // Wildcard for all subdomains
     ];
 
-    var PROXY = "PROXY 23.21.77.227:8118";
+    var PROXY = "PROXY 25.21.77.227:8118";
 
     /* ========= LOGIC ========= */
     // Check DIRECT_DOMAINS first
