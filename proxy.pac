@@ -12,7 +12,7 @@ function FindProxyForURL(url, host) {
         "example.com",
         "*.example.com",
         "localhost",
-        "127.0.0.1"
+        "127.0.0.1",
     ];
 
     var PROXY_DOMAINS = [
@@ -20,8 +20,6 @@ function FindProxyForURL(url, host) {
         "*.google.com",
         "github.com",
         "*.github.com",
-        "api.ipify.org",      // Exact match
-        "*.ipify.org"         // Wildcard for all subdomains
     ];
 
     var PROXY = "PROXY 25.21.77.227:8118";
