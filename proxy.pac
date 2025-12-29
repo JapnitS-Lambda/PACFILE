@@ -1,10 +1,4 @@
-function FindProxyForURL(url, host) {
-    // CRITICAL: Always bypass localhost/127.0.0.1 to avoid blocking PAC endpoint
-    if (host === "localhost" || host === "127.0.0.1" || 
-        shExpMatch(host, "127.*") || shExpMatch(host, "localhost*")) {
-        return "DIRECT";
-    }
-    
+function FindProxyForURL(url, host) {    
     // Normalize host (remove trailing dot, port, etc.)
     var normalizedHost = host.toLowerCase().replace(/\.$/, "").split(":")[0];
     
